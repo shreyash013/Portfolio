@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-surface-dim: #0b1326;
+  --color-surface: #0b1326;
+  --color-surface-bright: #31394d;
+  --color-surface-container-lowest: #060e20;
+  --color-surface-container-low: #131b2e;
+  --color-surface-container: #171f33;
+  --color-surface-container-high: #222a3d;
+  --color-surface-container-highest: #2d3449;
+  --color-on-surface: #dae2fd;
+  --color-on-surface-variant: #c3c6d7;
+  --color-primary: #b4c5ff;
+  --color-primary-container: #2563eb;
+  --color-on-primary-container: #eeefff;
+  --color-secondary: #4cd7f6;
+  --color-secondary-container: #03b5d3;
+  --color-tertiary: #ddb7ff;
+  --color-tertiary-container: #943fe2;
+  --color-background: #0b1326;
+  --color-on-background: #dae2fd;
+
+  --font-geist: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+  --bg-color: #0b1326;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: #dae2fd;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Geist', sans-serif;
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(23, 31, 51, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(34, 42, 61, 0.85);
+  border-color: rgba(37, 99, 235, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -10px rgba(37, 99, 235, 0.25);
+}
+
+/* Shimmer and Glow Effects */
+.glow-primary {
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.35);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 25px rgba(76, 215, 246, 0.35);
+}
+
+.glow-tertiary {
+  box-shadow: 0 0 25px rgba(221, 183, 255, 0.35);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #b4c5ff 0%, #4cd7f6 50%, #ddb7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1326;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222a3d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}

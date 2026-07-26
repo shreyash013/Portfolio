@@ -262,7 +262,7 @@ Aspiring AI & Data Science Engineer with hands-on experience in machine learning
             </span>
             <div className="flex gap-3">
               <a
-                href="https://github.com/shreyashgavade7"
+                href="https://github.com/shreyash013"
                 target="_blank"
                 rel="noreferrer"
                 className="flex-1 p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center gap-2 text-slate-300 hover:text-white hover:border-blue-500/40 transition-colors text-sm font-medium"

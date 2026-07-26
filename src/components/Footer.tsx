@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
         </p>
 
         <div className="flex items-center gap-4 text-slate-400">
-          <a href="https://github.com/shreyashgavade7" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
+          <a href="https://github.com/shreyash013" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
             <GithubIcon className="w-4 h-4" />
           </a>
           <a href="https://linkedin.com/in/shreyash-gavade-957608" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">

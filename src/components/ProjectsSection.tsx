@@ -37,7 +37,7 @@ export const ProjectsSection: React.FC = () => {
         "Smart price checking and priority detection algorithms"
       ],
       tags: ["Python", "Flask", "SQLite", "Chatbot", "Crowd Analysis", "Priority Detection"],
-      githubUrl: "https://github.com/shreyashgavade7",
+      githubUrl: "https://github.com/shreyash013/Portfolio",
       liveUrl: "https://github.com/shreyashgavade7"
     },
     {

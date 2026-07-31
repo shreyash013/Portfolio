@@ -38,7 +38,7 @@ export const ProjectsSection: React.FC = () => {
       ],
       tags: ["Python", "Flask", "SQLite", "Chatbot", "Crowd Analysis", "Priority Detection"],
       githubUrl: "https://github.com/shreyash013/Portfolio",
-      liveUrl: "https://github.com/shreyashgavade7"
+      liveUrl: "https://github.com/shreyash013"
     },
     {
       id: "insurance-prediction",
@@ -53,22 +53,22 @@ export const ProjectsSection: React.FC = () => {
         "Feature importance assessment and model evaluation"
       ],
       tags: ["Python", "Scikit-Learn", "Regression", "Feature Engineering", "Pandas"],
-      githubUrl: "https://github.com/shreyashgavade7"
+      githubUrl: "https://github.com/shreyash013"
     },
     {
       id: "nagar-seva",
       title: "Nagar-Seva-Complaint-Register",
       subtitle: "Machine Learning & Public Complaint Intelligence",
       date: "02/2026 – 05/2026",
-      description: "Developed a regression model to predict insurance charges based on factors such as age, BMI, smoking status, and region. Applied feature engineering, data preprocessing, and model optimization techniques to improve prediction accuracy and overall model performance.",
+      description: "Developed a web-based public complaint registration system with automated complaint categorization, priority tracking, and real-time status monitoring for municipal governance.",
       highlights: [
-        "End-to-end data preprocessing and scaling pipeline",
-        "Multivariate regression modeling based on demographic parameters",
-        "Model evaluation metrics optimization (RMSE, MAE, R² score)",
-        "Feature scaling and outlier handling"
+        "Public grievance portal for registering and tracking municipal complaints",
+        "Automated priority classification and department routing",
+        "Real-time status updates and resolution progress dashboard",
+        "Database integration for secure complaint storage and officer workflow"
       ],
-      tags: ["Python", "Machine Learning", "Scikit-Learn", "Data Preprocessing", "Regression"],
-      githubUrl: "https://github.com/shreyashgavade7"
+      tags: ["Python", "Machine Learning", "Flask", "SQLite", "Data Preprocessing"],
+      githubUrl: "https://github.com/shreyash013"
     }
   ];
 

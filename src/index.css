@@ -31,6 +31,11 @@
   --bg-color: #0b1326;
 }
 
+.light {
+  color-scheme: light;
+  --bg-color: #f8fafc;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -39,6 +44,22 @@ body {
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+.light body {
+  color: #0f172a;
+}
+
+.light .glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(226, 232, 240, 0.8);
+  color: #0f172a;
+}
+
+.light .glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(37, 99, 235, 0.4);
+  box-shadow: 0 12px 30px -10px rgba(37, 99, 235, 0.15);
 }
 
 h1, h2, h3, h4, h5, h6 {

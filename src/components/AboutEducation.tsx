@@ -18,7 +18,7 @@ export const AboutEducation: React.FC = () => {
       institution: "Shri Balaji Madhyamik Vidyalaya Ichalkaranji",
       location: "Ichalkaranji, India",
       date: "04/2023",
-      badge: "GPA: 59.00%",
+      badge: "GPA: 59.20%",
       badgeColor: "bg-cyan-500/20 text-cyan-300 border-cyan-500/30",
       icon: BookOpen,
       desc: "Higher Secondary Education in Mathematics, Physics, Chemistry, and Computer Science."
@@ -28,7 +28,7 @@ export const AboutEducation: React.FC = () => {
       institution: "Shri Padmaraje Vidyalaya Shirol",
       location: "Shirol, India",
       date: "04/2021",
-      badge: "GPA: 87.20%",
+      badge: "GPA: 88.20%",
       badgeColor: "bg-purple-500/20 text-purple-300 border-purple-500/30",
       icon: Award,
       desc: "Secondary School Certificate with distinction in Science and Mathematics."

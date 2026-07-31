@@ -34,75 +34,6 @@ export const ContactSection: React.FC = () => {
     }, 1000);
   };
 
-  const handleDownloadResume = () => {
-    const resumeText = `# SHREYASH GAVADE
-AI & DATA SCIENCE ENGINEER
-Email: shreyashgavade7@gmail.com | Phone: +91 9356997428
-Location: Kolhapur, Maharashtra 416103
-LinkedIn: linkedin.com/in/shreyash-gavade-957608
-
----
-
-## OBJECTIVE
-Aspiring AI & Data Science Engineer with hands-on experience in machine learning, data analysis, and backend development. Proficient in building predictive models, data preprocessing, and working with real-world datasets to extract actionable insights. Skilled in programming languages like Python and Java, along with database management and API development.
-
----
-
-## WORK EXPERIENCE
-### Sunbeam Infotech — Machine Learning Intern
-*12/2025 – 01/2026 | Pune, India*
-- Developed ML models using Python (NumPy, Pandas, Scikit-learn) on real datasets.
-- Performed data preprocessing, feature engineering, and model evaluation.
-- Applied data structures for efficient data handling and analysis.
-- Worked with structured datasets and basic database connectivity.
-
----
-
-## EDUCATION
-- **DKTE Society's Textile and Engineering College, Ichalkaranji**
-  Bachelor of Technology: Artificial Intelligence and Data Science (05/2027, Ichalkaranji, India)
-- **Shri Balaji Madhyamik Vidyalaya Ichalkaranji**
-  12th (HSC) — GPA: 59.20% (04/2023, Ichalkaranji, India)
-- **Shri Padmaraje Vidyalaya Shirol**
-  10th (SSC) — GPA: 88.20% (04/2021, Shirol, India)
-
----
-
-## SKILLS
-- **Programming Languages**: Java, Python, C, C++, C#, SQL
-- **Web & Backend**: HTML5, CSS3, JavaScript, Node.js, Express.js, MySQL, SQLite, JDBC Connectivity
-- **Machine Learning**: NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn, Feature Engineering, EDA, Classification & Regression, Model Evaluation
-- **Strengths**: Logical Problem-Solving, Debugging, Fast Learner, Teamwork
-
----
-
-## CERTIFICATIONS
-- AI-ML Virtual Internship (EduSkill, 11/2025)
-- McKinsey Forward (McKinsey & Company, 07/2026)
-- Foundation of Feature Engineering (CodeSignal, 09/2025)
-- Data Analytics Job Simulation (Deloitte, 03/2026)
-- Data Visualization: Empowering Business with Effective Insights (TATA, 03/2026)
-- Design Technology and Innovation (NPTEL)
-
----
-
-## PROJECTS
-- **TrustTrip – AI-Powered Smart Travel Assistant** (04/2026 – Present)
-- **Insurance Prediction System** (12/2025 – 01/2026)
-- **Nagar-Seva-Complaint-Register** (02/2026 – 05/2026)
-`;
-
-    const blob = new Blob([resumeText], { type: 'text/markdown' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Shreyash_Gavade_Resume.md';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  };
-
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
       {/* Resume Banner CTA */}
@@ -118,17 +49,20 @@ Aspiring AI & Data Science Engineer with hands-on experience in machine learning
             Download Shreyash's Resume
           </h2>
           <p className="text-slate-300 font-inter text-base">
-            Get the full technical resume detailing machine learning projects, Sunbeam Infotech internship, and academic scores.
+            Get the official PDF technical resume detailing machine learning projects, Sunbeam Infotech internship, and academic scores.
           </p>
         </div>
 
-        <button
-          onClick={handleDownloadResume}
+        <a
+          href="/Shreyash_Gavade_Resume.pdf"
+          download="Shreyash_Gavade_Resume.pdf"
+          target="_blank"
+          rel="noreferrer"
           className="px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-geist font-bold text-sm tracking-widest uppercase shadow-xl shadow-blue-600/30 hover:scale-105 active:scale-95 transition-all flex items-center gap-3"
         >
-          <span>DOWNLOAD OFFICIAL RESUME</span>
+          <span>DOWNLOAD OFFICIAL RESUME (PDF)</span>
           <Download className="w-4 h-4" />
-        </button>
+        </a>
       </div>
 
       {/* Main Contact Section */}

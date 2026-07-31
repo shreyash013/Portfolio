@@ -132,13 +132,16 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, setActiveSection 
               {themeMode === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-200" />}
             </button>
 
-            <button
-              onClick={() => scrollTo('contact')}
+            <a
+              href="/Shreyash_Gavade_Resume.pdf"
+              download="Shreyash_Gavade_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
               className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm font-semibold hover:opacity-90 shadow-lg shadow-blue-600/25 transition-all flex items-center gap-2"
             >
               <FileDown className="w-4 h-4" />
               Resume
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
